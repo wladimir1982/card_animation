@@ -413,7 +413,11 @@ html {
   margin: 0 auto;
   text-transform: uppercase;
   color: #FF0000;
-  text-shadow: 3px 3px 2px black, 0 0 1em #ADFF2F; }
+  text-shadow: 3px 3px 2px black, 0 0 1em #ADFF2F;
+  animation: pulse 2s 5; }
+
+.title:hover {
+  animation: pulse 5s; }
 
 .cards {
   display: inline-block;
@@ -595,5 +599,15 @@ li {
   font-size: 22px;
   line-height: 0;
   color: black; }
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+.pulse {
+  animation-name: pulse; }
 
 /*# sourceMappingURL=style.css.map */
