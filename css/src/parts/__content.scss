@@ -1,0 +1,298 @@
+html {
+  background-color: #076324;
+  background-image: url("http://www.transparenttextures.com/patterns/black-felt.png");
+}
+
+.title {
+  font-size: 28px;
+  //font-family: "FF Meta Serif", serif;
+  font-family: $main-font-family;
+  font-weight: 900;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #FF0000;
+  text-shadow: 3px 3px 2px black, 0 0 1em #ADFF2F;
+}
+
+.cards {
+  display: inline-block;
+  text-align: center;
+}
+
+li, .front, .back {
+  width: 71px;
+  height: 97px;
+}
+
+li {
+  perspective: 600px;
+  float: left;
+  margin: 0 0 10px 10px;
+  cursor: pointer;
+  list-style: none;
+
+  &:hover .wrapper_one {
+    transform: rotateX(180deg) translate(0, -97px);
+  }
+  &:hover .wrapper_two {
+    transform: rotateY(180deg) translate(-71px, 0);
+  }
+  &:hover .wrapper_three {
+    transform: scale(1.5) rotateY(-180deg) translate(-50px, -32px);
+  }
+  &:hover .wrapper_four {
+    transform: rotateY(-180deg) translate(-71px, 0);
+  }
+  &:nth-child(1) .back {
+    background: url($ace_clubs) -2px -1px;
+  }
+  &:nth-child(2) .back {
+    background: url($ace_clubs) -366px -1px;
+  }
+  &:nth-child(3) .back {
+    background: url($ace_clubs) -440px -1px;
+  }
+  &:nth-child(4) .back {
+    background: url($ace_clubs) -512px -1px;
+  }
+  &:nth-child(5) .back {
+    background: url($ace_clubs) -586px -1px;
+  }
+  &:nth-child(6) .back {
+    background: url($ace_clubs) -658px -1px;
+  }
+  &:nth-child(7) .back {
+    background: url($ace_clubs) -732px -1px;
+  }
+  &:nth-child(8) .back {
+    background: url($ace_clubs) -804px -1px;
+  }
+  &:nth-child(9) .back {
+    background: url($ace_clubs) -878px -1px;
+  }
+  &:nth-child(11) .back {
+    background: url($ace_clubs) -2px -99px;
+  }
+  &:nth-child(12) .back {
+    background: url($ace_clubs) -366px -99px;
+  }
+  &:nth-child(13) .back {
+    background: url($ace_clubs) -440px -99px;
+  }
+  &:nth-child(14) .back {
+    background: url($ace_clubs) -512px -99px;
+  }
+  &:nth-child(15) .back {
+    background: url($ace_clubs) -586px -99px;
+  }
+  &:nth-child(16) .back {
+    background: url($ace_clubs) -658px -99px;
+  }
+  &:nth-child(17) .back {
+    background: url($ace_clubs) -732px -99px;
+  }
+  &:nth-child(18) .back {
+    background: url($ace_clubs) -804px -99px;
+  }
+  &:nth-child(19) .back {
+    background: url($ace_clubs) -878px -99px;
+  }
+  &:nth-child(31) .back {
+    background: url($ace_clubs) -2px -295px;
+  }
+  &:nth-child(32) .back {
+    background: url($ace_clubs) -366px -295px;
+  }
+  &:nth-child(33) .back {
+    background: url($ace_clubs) -440px -295px;
+  }
+  &:nth-child(34) .back {
+    background: url($ace_clubs) -512px -295px;
+  }
+  &:nth-child(35) .back {
+    background: url($ace_clubs) -586px -295px;
+  }
+  &:nth-child(36) .back {
+    background: url($ace_clubs) -658px -295px;
+  }
+  &:nth-child(37) .back {
+    background: url($ace_clubs) -732px -295px;
+  }
+  &:nth-child(38) .back {
+    background: url($ace_clubs) -804px -295px;
+  }
+  &:nth-child(39) .back {
+    background: url($ace_clubs) -878px -295px;
+  }
+  &:nth-child(21) .back {
+    background: url($ace_clubs) -2px -197px;
+  }
+  &:nth-child(22) .back {
+    background: url($ace_clubs) -366px -197px;
+  }
+  &:nth-child(23) .back {
+    background: url($ace_clubs) -440px -197px;
+  }
+  &:nth-child(24) .back {
+    background: url($ace_clubs) -512px -197px;
+  }
+  &:nth-child(25) .back {
+    background: url($ace_clubs) -586px -197px;
+  }
+  &:nth-child(26) .back {
+    background: url($ace_clubs) -658px -197px;
+  }
+  &:nth-child(27) .back {
+    background: url($ace_clubs) -732px -197px;
+  }
+  &:nth-child(28) .back {
+    background: url($ace_clubs) -804px -197px;
+  }
+  &:nth-child(29) .back {
+    background: url($ace_clubs) -878px -197px;
+  }
+
+
+}
+
+.wrapper_one {
+  position: relative;
+  transition: all $transition_duration;
+  transform-style: preserve-3d;
+}
+
+.wrapper_two {
+  position: relative;
+  transition: all $transition_duration;
+  transform-style: preserve-3d;
+}
+
+.wrapper_three {
+  position: relative;
+  transition: all $transition_duration;
+  transform-style: preserve-3d;
+}
+
+.wrapper_four {
+  position: relative;
+  transition: all $transition_duration;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  backface-visibility: hidden;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.front {
+  z-index: 3;
+  background-image: url('../../img/bicycle-card.png');
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.button-group {
+  text-align: center;
+  //margin-bottom: 75px;
+}
+
+.button {
+  @include for-btn-portfolio;
+}
+
+.button:hover {
+  @include for-btn-portfolio-hover;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.is-checked {
+  border-bottom: 5px solid brown;
+}
+
+.grid {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.tref {
+  font-size: 22px;
+  line-height: 0;
+  color: black;
+}
+.chir {
+  font-size: 22px;
+  line-height: 0;
+  color: red;
+}
+.diam {
+  font-size: 22px;
+  line-height: 0;
+  color: red;
+}
+.peak {
+  font-size: 22px;
+  line-height: 0;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

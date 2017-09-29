@@ -1,0 +1,23 @@
+
+
+@mixin for-btn-portfolio {
+    background-color: #f3f3f3;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    color: $color-for-btn-portfolio;
+    font-family: $main-font-family;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+@mixin for-btn-portfolio-hover {
+    background: #00FF00;
+    color: #FFFF00;
+    box-shadow: 0 0 0 2px #008000 inset, 0 0 0 4px #FFFF00 inset;
+    transition: .3s linear;
+}

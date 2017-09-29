@@ -1,0 +1,599 @@
+/*---------------------------------
+Global
+-----------------------------------*/
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  margin: 0 auto; }
+
+/*---------------------------------
+Variables
+-----------------------------------*/
+/*---------------------------------
+Mixins
+-----------------------------------*/
+/*---------------------------------
+Typography
+-----------------------------------*/
+/*---------------------------------
+Content
+-----------------------------------*/
+html {
+  background-color: #076324;
+  background-image: url("http://www.transparenttextures.com/patterns/black-felt.png"); }
+
+.title {
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #FF0000;
+  text-shadow: 3px 3px 2px black, 0 0 1em #ADFF2F; }
+
+.cards {
+  display: inline-block;
+  text-align: center; }
+
+li, .front, .back {
+  width: 71px;
+  height: 97px; }
+
+li {
+  perspective: 600px;
+  float: left;
+  margin: 0 0 10px 10px;
+  cursor: pointer;
+  list-style: none; }
+  li:hover .wrapper_one {
+    transform: rotateX(180deg) translate(0, -97px); }
+  li:hover .wrapper_two {
+    transform: rotateY(180deg) translate(-71px, 0); }
+  li:hover .wrapper_three {
+    transform: scale(1.5) rotateY(-180deg) translate(-50px, -32px); }
+  li:hover .wrapper_four {
+    transform: rotateY(-180deg) translate(-71px, 0); }
+  li:nth-child(1) .back {
+    background: url("../../img/windows-playing-cards.png") -2px -1px; }
+  li:nth-child(2) .back {
+    background: url("../../img/windows-playing-cards.png") -366px -1px; }
+  li:nth-child(3) .back {
+    background: url("../../img/windows-playing-cards.png") -440px -1px; }
+  li:nth-child(4) .back {
+    background: url("../../img/windows-playing-cards.png") -512px -1px; }
+  li:nth-child(5) .back {
+    background: url("../../img/windows-playing-cards.png") -586px -1px; }
+  li:nth-child(6) .back {
+    background: url("../../img/windows-playing-cards.png") -658px -1px; }
+  li:nth-child(7) .back {
+    background: url("../../img/windows-playing-cards.png") -732px -1px; }
+  li:nth-child(8) .back {
+    background: url("../../img/windows-playing-cards.png") -804px -1px; }
+  li:nth-child(9) .back {
+    background: url("../../img/windows-playing-cards.png") -878px -1px; }
+  li:nth-child(11) .back {
+    background: url("../../img/windows-playing-cards.png") -2px -99px; }
+  li:nth-child(12) .back {
+    background: url("../../img/windows-playing-cards.png") -366px -99px; }
+  li:nth-child(13) .back {
+    background: url("../../img/windows-playing-cards.png") -440px -99px; }
+  li:nth-child(14) .back {
+    background: url("../../img/windows-playing-cards.png") -512px -99px; }
+  li:nth-child(15) .back {
+    background: url("../../img/windows-playing-cards.png") -586px -99px; }
+  li:nth-child(16) .back {
+    background: url("../../img/windows-playing-cards.png") -658px -99px; }
+  li:nth-child(17) .back {
+    background: url("../../img/windows-playing-cards.png") -732px -99px; }
+  li:nth-child(18) .back {
+    background: url("../../img/windows-playing-cards.png") -804px -99px; }
+  li:nth-child(19) .back {
+    background: url("../../img/windows-playing-cards.png") -878px -99px; }
+  li:nth-child(31) .back {
+    background: url("../../img/windows-playing-cards.png") -2px -295px; }
+  li:nth-child(32) .back {
+    background: url("../../img/windows-playing-cards.png") -366px -295px; }
+  li:nth-child(33) .back {
+    background: url("../../img/windows-playing-cards.png") -440px -295px; }
+  li:nth-child(34) .back {
+    background: url("../../img/windows-playing-cards.png") -512px -295px; }
+  li:nth-child(35) .back {
+    background: url("../../img/windows-playing-cards.png") -586px -295px; }
+  li:nth-child(36) .back {
+    background: url("../../img/windows-playing-cards.png") -658px -295px; }
+  li:nth-child(37) .back {
+    background: url("../../img/windows-playing-cards.png") -732px -295px; }
+  li:nth-child(38) .back {
+    background: url("../../img/windows-playing-cards.png") -804px -295px; }
+  li:nth-child(39) .back {
+    background: url("../../img/windows-playing-cards.png") -878px -295px; }
+  li:nth-child(21) .back {
+    background: url("../../img/windows-playing-cards.png") -2px -197px; }
+  li:nth-child(22) .back {
+    background: url("../../img/windows-playing-cards.png") -366px -197px; }
+  li:nth-child(23) .back {
+    background: url("../../img/windows-playing-cards.png") -440px -197px; }
+  li:nth-child(24) .back {
+    background: url("../../img/windows-playing-cards.png") -512px -197px; }
+  li:nth-child(25) .back {
+    background: url("../../img/windows-playing-cards.png") -586px -197px; }
+  li:nth-child(26) .back {
+    background: url("../../img/windows-playing-cards.png") -658px -197px; }
+  li:nth-child(27) .back {
+    background: url("../../img/windows-playing-cards.png") -732px -197px; }
+  li:nth-child(28) .back {
+    background: url("../../img/windows-playing-cards.png") -804px -197px; }
+  li:nth-child(29) .back {
+    background: url("../../img/windows-playing-cards.png") -878px -197px; }
+
+.wrapper_one {
+  position: relative;
+  transition: all 1s;
+  transform-style: preserve-3d; }
+
+.wrapper_two {
+  position: relative;
+  transition: all 1s;
+  transform-style: preserve-3d; }
+
+.wrapper_three {
+  position: relative;
+  transition: all 1s;
+  transform-style: preserve-3d; }
+
+.wrapper_four {
+  position: relative;
+  transition: all 1s;
+  transform-style: preserve-3d; }
+
+.front, .back {
+  position: absolute;
+  backface-visibility: hidden;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px; }
+
+.front {
+  z-index: 3;
+  background-image: url("../../img/bicycle-card.png"); }
+
+.back {
+  transform: rotateY(180deg); }
+
+.button-group {
+  text-align: center; }
+
+.button {
+  background-color: #f3f3f3;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #464646;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase; }
+
+.button:hover {
+  background: #00FF00;
+  color: #FFFF00;
+  box-shadow: 0 0 0 2px #008000 inset, 0 0 0 4px #FFFF00 inset;
+  transition: .3s linear; }
+
+.button:focus {
+  outline: 0; }
+
+.is-checked {
+  border-bottom: 5px solid brown; }
+
+.grid {
+  height: 100%;
+  margin: 0 auto; }
+
+.tref {
+  font-size: 22px;
+  line-height: 0;
+  color: black; }
+
+.chir {
+  font-size: 22px;
+  line-height: 0;
+  color: red; }
+
+.diam {
+  font-size: 22px;
+  line-height: 0;
+  color: red; }
+
+.peak {
+  font-size: 22px;
+  line-height: 0;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */
